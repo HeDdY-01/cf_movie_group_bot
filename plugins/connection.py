@@ -28,7 +28,7 @@ async def addconnection(client, message):
             return
 
     elif chat_type in ["group", "supergroup"]:
-        group_id = message.chat.id
+        group_id = update.message.chat.id
 
     try:
         st = await client.get_chat_member(group_id, user_id)
