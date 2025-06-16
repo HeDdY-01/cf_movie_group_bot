@@ -20,7 +20,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://envs.sh/te8.jpg https://envs.sh/te7.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/a23fc0ce4f8e34ba58b6c-032081382567b94a80.jpg')).split()
 FORCE_IMG = environ.get('FORCE_IMG', "https://graph.org/file/495474c424c774e2fa7b5-15e6a76e4bec7f6fc7.jpg")
 NOR_IMG = environ.get('NOR_IMG', "https://envs.sh/PvY.jpg")
 
