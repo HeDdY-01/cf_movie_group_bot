@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('Updates 📣', url='https://t.me/cinema_flix_updates')
+            InlineKeyboardButton('Updates 📣', url='https://t.me/CFOTTUPDATE')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -56,7 +56,7 @@ async def save_group(bot, message):
                 temp.MELCOW['welcome'] = await message.reply_video(
                 video="https://envs.sh/K-F.mp4",
                                                  caption=f'<b>Hey {u.mention} Welcome to {message.chat.title} ഗ്രൂപ്പിലേക്ക് സ്വാഗതം..\n\nസിനിമ സീരീസ് അപ്‌ലോഡ് ചെയ്തിട്ടുണ്ട്സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക..!\n\nSearch [Google.com] find the Correct spelling of movie name and year.Then type that in to get the files.!\n\nNB: ഞങ്ങളുടെ മെയിൻ ചാനലിൽ കൂടി ജോയിൻ ചെയ്താലേ സിനിമകളിലേക്കുമുള്ള അക്‌സസ് ലഭിക്കുകയൊള്ളു.\n\nJoin the main channel to get access to all the movie files.</b>',
-                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('⚠️ 𝗝𝗼𝗶𝗻 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ⚠️', url='https://t.me/cinema_flix_updates') ] ] )
+                                                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('❕Jᴏɪɴ Mᴀɪɴ Cʜᴀɴɴᴇʟ❕', url='https://t.me/CFOTTUPDATE') ] ] )
                 )
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
