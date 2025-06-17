@@ -40,7 +40,6 @@ Name - {}
 """
 
     FILE_CAPTION = """<b><blockquote>📚 <code>{file_name}</code> </blockquote></b>
-    
     <b>----------------------------------------</b>
     <b>🔗Channel Join : [Click Here](https://t.me/CFOTTUPDATE)</b>
     <b>----------------------------------------</b>
