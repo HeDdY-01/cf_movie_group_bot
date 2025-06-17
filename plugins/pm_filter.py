@@ -117,19 +117,19 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("⭅ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-             InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton(f"| {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} |", callback_data="pages"),
              InlineKeyboardButton("Dᴇʟᴇᴛᴇ 🗑️", callback_data="close_data")]
         )
     elif off_set is None:
         btn.append(
             [InlineKeyboardButton("❖ Pᴀɢᴇꜱ", callback_data="pages"),
-             InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+             InlineKeyboardButton(f"| {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} |", callback_data="pages"),
              InlineKeyboardButton("Nᴇxᴛ ⇛", callback_data=f"next_{req}_{key}_{n_offset}")])
     else:
         btn.append(
             [
                 InlineKeyboardButton("⭅ Bᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
-                InlineKeyboardButton(f" {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)}", callback_data="pages"),
+                InlineKeyboardButton(f"| {math.ceil(int(offset) / 10) + 1} / {math.ceil(total / 10)} |", callback_data="pages"),
                 InlineKeyboardButton("Nᴇxᴛ ⇛", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
         )
@@ -626,7 +626,7 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton("❖ Pᴀɢᴇꜱ", callback_data="pages"),
-             InlineKeyboardButton(text=f" 1/{math.ceil(int(total_results) / 10)}", callback_data="pages"),
+             InlineKeyboardButton(text=f"| 1/{math.ceil(int(total_results) / 10)} |", callback_data="pages"),
              InlineKeyboardButton(text="Nᴇxᴛ ⇛", callback_data=f"next_{req}_{key}_{offset}")]
         )
     else:
