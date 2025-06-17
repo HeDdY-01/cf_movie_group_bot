@@ -83,7 +83,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"〶 {get_size(file.file_size)} 〶 {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"〶 {get_size(file.file_size)} {file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -392,7 +392,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     reply_markup=InlineKeyboardMarkup(
                         [
                          [
-                          InlineKeyboardButton('💥 Gʀᴏᴜᴩ', url="https://t.me/+iEbhY7mM4oE1OTVl"),
+                          InlineKeyboardButton('💥 Gʀᴏᴜᴩ', url="https://t.me/+PmCZjkOWEXZmMDM9"),
                           InlineKeyboardButton('Dᴇʟᴇᴛᴇ ⚠️', callback_data='close_data')
                           ],[
                           InlineKeyboardButton(text=f'⚙️ Fɪʟᴇ Sɪᴢᴇ 【 {size} 】⚙️', callback_data='gxneo')
@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                  InlineKeyboardButton('💥 Gʀᴏᴜᴩ', url="https://t.me/+iEbhY7mM4oE1OTVl"),
+                  InlineKeyboardButton('💥 Gʀᴏᴜᴩ', url="https://t.me/+PmCZjkOWEXZmMDM9"),
                   InlineKeyboardButton('Dᴇʟᴇᴛᴇ ⚠️', callback_data='close_data')
                   ],[
                   InlineKeyboardButton(text=f'⚙️ Fɪʟᴇ Sɪᴢᴇ 【 {size} 】⚙️', callback_data='gxneo')
@@ -595,7 +595,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"〶 {get_size(file.file_size)} 〶 {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"〶 {get_size(file.file_size)}  {file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
