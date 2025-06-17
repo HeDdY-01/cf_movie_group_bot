@@ -234,7 +234,7 @@ async def start(client, message):
         f_caption = f"{files.file_name}"
     buttons = [
                     [
-                        InlineKeyboardButton('💥 Gʀᴏᴜᴩ', url="https://t.me/+iEbhY7mM4oE1OTVl"),
+                        InlineKeyboardButton('💥 Gʀᴏᴜᴩ', url="https://t.me/+PmCZjkOWEXZmMDM9"),
                         InlineKeyboardButton('Dᴇʟᴇᴛᴇ ⚠️', callback_data='close_data')
                     ],
                     [
