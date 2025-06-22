@@ -48,7 +48,7 @@ async def pm_text(bot, message):
     if user_id in ADMINS: return # ignore admins
     await message.reply_text(
          text=f"<b>❝ ഇവിടെ ചോദിച്ചാൽ സിനിമ കിട്ടില്ല ഗ്രൂപ്പിൽ മാത്രം സിനിമ ചോദിക്കുക..!!\n\n❝ Group or bot any promblem or bugs contact group owner = @TG_x_filter!!!</b>",   
-         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎭Cinemaflix // #Backup-Group™🎭", url=f"https://t.me/+iEbhY7mM4oE1OTVl")]])
+         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔍 Cʟɪᴄᴋ ᴛᴏ Sᴇᴀʀᴄʜ", url=f"https://t.me/Mallu_Movie_Hub_Group")]])
     )
     await bot.send_message(
         chat_id=LOG_CHANNEL,
